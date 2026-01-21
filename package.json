@@ -29,7 +29,7 @@
     "prepare": "ts-scripts install",
     "prepublishOnly": "npm run build",
     "specs": "ts-scripts specs",
-    "test": "ts-scripts test"
+    "test": "vitest run --coverage"
   },
   "devDependencies": {
     "@borderless/ts-scripts": "^0.15.0",
