@@ -29,7 +29,10 @@
     "prepare": "ts-scripts install",
     "prepublishOnly": "npm run build",
     "specs": "ts-scripts specs",
-    "test": "vitest run --coverage"
+    "test": "vitest run --coverage",
+    "test:clean": "rm -rf coverage",
+    "test:no-clean": "vitest run --coverage --coverage.clean=false",
+    "test:report": "vitest run --coverage --coverage.reportOnFailure"
   },
   "devDependencies": {
     "@borderless/ts-scripts": "^0.15.0",
